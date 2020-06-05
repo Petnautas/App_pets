@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var cardImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        cardView.layer.cornerRadius = 30
+        cardImage.layer.cornerRadius = 30
     }
-
 
 }
 
