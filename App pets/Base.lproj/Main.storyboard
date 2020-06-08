@@ -19,11 +19,13 @@
                                 <rect key="frame" x="20" y="123" width="374" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="Jjd-fB-buQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="Jjd-fB-buQ">
                                         <rect key="frame" x="26" y="35" width="323" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-YE-Qlr">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-YE-Qlr">
                                         <rect key="frame" x="301" y="416" width="38" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
                                         <state key="normal" title="i"/>
@@ -31,53 +33,34 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstItem="6dM-YE-Qlr" firstAttribute="leading" secondItem="ABR-XM-YVV" secondAttribute="leading" constant="301" id="IAb-nD-ygQ"/>
-                                    <constraint firstItem="Jjd-fB-buQ" firstAttribute="leading" secondItem="ABR-XM-YVV" secondAttribute="leading" constant="26" id="KDX-tE-48P"/>
-                                    <constraint firstItem="Jjd-fB-buQ" firstAttribute="top" secondItem="ABR-XM-YVV" secondAttribute="top" constant="35" id="ME0-6T-wHU"/>
-                                    <constraint firstItem="ABR-XM-YVV" firstAttribute="bottom" secondItem="6dM-YE-Qlr" secondAttribute="bottom" constant="130" id="Qdu-ek-cod"/>
-                                    <constraint firstItem="6dM-YE-Qlr" firstAttribute="top" secondItem="ABR-XM-YVV" secondAttribute="top" constant="416" id="ZVC-oQ-XuW"/>
-                                    <constraint firstItem="ABR-XM-YVV" firstAttribute="trailing" secondItem="6dM-YE-Qlr" secondAttribute="trailing" constant="35" id="mJN-Sm-8Ng"/>
-                                    <constraint firstItem="Jjd-fB-buQ" firstAttribute="centerX" secondItem="FwM-IB-Env" secondAttribute="centerX" id="p3l-yM-ZFy"/>
-                                    <constraint firstItem="ABR-XM-YVV" firstAttribute="bottom" secondItem="Jjd-fB-buQ" secondAttribute="bottom" constant="109" id="xO3-O0-3JL"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="ABR-XM-YVV"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efY-Ee-2Bc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efY-Ee-2Bc">
                                 <rect key="frame" x="61" y="753" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Kj1-Kn-hkN"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="arrow.clockwise" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="37" scale="default"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9T-8K-mRv">
-                                <rect key="frame" x="290" y="766" width="38" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-eb-k79">
+                                <rect key="frame" x="20" y="74" width="71" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9T-8K-mRv">
+                                <rect key="frame" x="292" y="753" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="bookmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="37"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-eb-k79">
-                                <rect key="frame" x="20" y="74" width="71" height="41"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37647058820000001" green="0.25098039220000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9T-8K-mRv" secondAttribute="trailing" constant="86" id="ENs-uI-sZc"/>
-                            <constraint firstItem="H9T-8K-mRv" firstAttribute="top" secondItem="FwM-IB-Env" secondAttribute="bottom" constant="59" id="Ocj-cP-QEd"/>
-                            <constraint firstItem="i0d-eb-k79" firstAttribute="leading" secondItem="FwM-IB-Env" secondAttribute="leading" id="YJZ-pP-q8M"/>
-                            <constraint firstItem="efY-Ee-2Bc" firstAttribute="centerY" secondItem="H9T-8K-mRv" secondAttribute="centerY" id="kxU-P2-uTG"/>
-                            <constraint firstItem="efY-Ee-2Bc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="ujg-cw-qmw"/>
-                            <constraint firstItem="i0d-eb-k79" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="yFy-Sj-8ut"/>
-                            <constraint firstItem="efY-Ee-2Bc" firstAttribute="top" secondItem="FwM-IB-Env" secondAttribute="bottom" constant="46" id="yjp-ET-03a"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>

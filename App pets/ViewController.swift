@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         buttonRefresh.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
         buttonRefresh.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
         
+        
+        
+        buttonSave.layer.cornerRadius = 0.84*buttonInfo.bounds.size.width
+        buttonSave.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
+        buttonSave.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
+        
     }
 
 }
