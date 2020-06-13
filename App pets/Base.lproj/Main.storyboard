@@ -65,6 +65,9 @@
                                 <state key="normal" image="bookmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="37"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erw-Rc-8Xa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37647058820000001" green="0.25098039220000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

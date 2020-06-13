@@ -16,10 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonRefresh: UIButton!
     @IBOutlet weak var buttonSave: UIButton!
     @IBOutlet weak var buttonApadrinhar: UIButton!
-    
+    var a: Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        a = true
+
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
         cardView.layer.cornerRadius = 30
@@ -44,8 +45,11 @@ class ViewController: UIViewController {
     }
     @IBAction func apadrinharFill(_ sender: Any) {
         buttonApadrinhar.setImage(#imageLiteral(resourceName: "ApadrinharFill"), for:UIControl.State.normal)
-        
-        
+    }
+    
+    @IBAction func saveFill(_ sender: Any) {
+        buttonSave.setImage(UIImage(systemName:"bookmark.fill"),for:UIControl.State.normal)
+        print("oi")
     }
     
 
