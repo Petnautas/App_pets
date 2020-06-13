@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonInfo: UIButton!
     @IBOutlet weak var buttonRefresh: UIButton!
     @IBOutlet weak var buttonSave: UIButton!
+    @IBOutlet weak var buttonApadrinhar: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,17 +29,27 @@ class ViewController: UIViewController {
         buttonInfo.layer.borderWidth = 1
         buttonInfo.layer.borderColor = UIColor.white.cgColor
        
-        buttonRefresh.layer.cornerRadius = 0.84*buttonInfo.bounds.size.width
+        buttonRefresh.layer.cornerRadius = 0.8*buttonInfo.bounds.size.width
         buttonRefresh.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
         buttonRefresh.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
         
         
         
-        buttonSave.layer.cornerRadius = 0.84*buttonInfo.bounds.size.width
+        buttonSave.layer.cornerRadius = 0.8*buttonInfo.bounds.size.width
         buttonSave.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
         buttonSave.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
         
+       
+        
     }
+    @IBAction func apadrinharFill(_ sender: Any) {
+        buttonApadrinhar.setImage(#imageLiteral(resourceName: "ApadrinharFill"), for:UIControl.State.normal)
+        
+        
+    }
+    
+
 
 }
+
 

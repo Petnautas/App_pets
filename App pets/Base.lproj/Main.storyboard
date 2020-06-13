@@ -36,7 +36,7 @@
                                 <viewLayoutGuide key="safeArea" id="ABR-XM-YVV"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efY-Ee-2Bc">
-                                <rect key="frame" x="61" y="753" width="70" height="70"/>
+                                <rect key="frame" x="57" y="762" width="63" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,15 +44,22 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="37" scale="default"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-eb-k79">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-eb-k79">
                                 <rect key="frame" x="20" y="74" width="71" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3M-jk-eCh">
+                                <rect key="frame" x="154" y="723" width="109" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Apadrinhar"/>
+                                <connections>
+                                    <action selector="apadrinharFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEo-Uu-eTx"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9T-8K-mRv">
-                                <rect key="frame" x="292" y="753" width="70" height="70"/>
+                                <rect key="frame" x="298" y="762" width="63" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="bookmark" catalog="system">
@@ -61,11 +68,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37647058820000001" green="0.25098039220000001" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i0d-eb-k79" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3Ya-J2-FEX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0d-eb-k79" secondAttribute="trailing" constant="323" id="Zbd-cg-eYo"/>
+                            <constraint firstItem="i0d-eb-k79" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FwM-IB-Env" secondAttribute="leading" id="vSf-B0-ZUb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="buttonApadrinhar" destination="D3M-jk-eCh" id="h4d-7k-b2p"/>
                         <outlet property="buttonInfo" destination="6dM-YE-Qlr" id="V32-BJ-khy"/>
                         <outlet property="buttonRefresh" destination="efY-Ee-2Bc" id="ONf-lS-Ijc"/>
                         <outlet property="buttonSave" destination="H9T-8K-mRv" id="xvb-92-b9o"/>
@@ -79,6 +92,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Apadrinhar" width="97" height="94"/>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="unnamed" width="384" height="512"/>
