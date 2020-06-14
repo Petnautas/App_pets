@@ -15,25 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="FwM-IB-Env">
-                                <rect key="frame" x="20" y="123" width="374" height="584"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-zZ-Ltg">
+                                <rect key="frame" x="20" y="138" width="374" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="Jjd-fB-buQ">
-                                        <rect key="frame" x="26" y="35" width="323" height="440"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-bq-FEj" userLabel="Back View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="552"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-YE-Qlr">
-                                        <rect key="frame" x="301" y="416" width="38" height="38"/>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvC-sd-y4J">
+                                        <rect key="frame" x="320" y="500" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
-                                        <state key="normal" title="i"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeInfoOnTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JxU-WC-JYt"/>
+                                        </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" id="FwM-IB-Env">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="552"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="Jjd-fB-buQ">
+                                                <rect key="frame" x="26" y="35" width="323" height="440"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-YE-Qlr">
+                                                <rect key="frame" x="301" y="416" width="38" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
+                                                <state key="normal" title="i"/>
+                                                <connections>
+                                                    <action selector="infoOnTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKt-xV-cQo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <viewLayoutGuide key="safeArea" id="ABR-XM-YVV"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <viewLayoutGuide key="safeArea" id="ABR-XM-YVV"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efY-Ee-2Bc">
                                 <rect key="frame" x="57" y="762" width="63" height="60"/>
@@ -74,19 +102,21 @@
                         <constraints>
                             <constraint firstItem="i0d-eb-k79" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3Ya-J2-FEX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0d-eb-k79" secondAttribute="trailing" constant="323" id="Zbd-cg-eYo"/>
-                            <constraint firstItem="i0d-eb-k79" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FwM-IB-Env" secondAttribute="leading" id="vSf-B0-ZUb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="backView" destination="bcf-bq-FEj" id="EDj-5Q-mmo"/>
                         <outlet property="buttonApadrinhar" destination="D3M-jk-eCh" id="h4d-7k-b2p"/>
+                        <outlet property="buttonCloseInfo" destination="rvC-sd-y4J" id="Wqb-fn-6XZ"/>
                         <outlet property="buttonInfo" destination="6dM-YE-Qlr" id="V32-BJ-khy"/>
                         <outlet property="buttonRefresh" destination="efY-Ee-2Bc" id="ONf-lS-Ijc"/>
                         <outlet property="buttonSave" destination="H9T-8K-mRv" id="xvb-92-b9o"/>
                         <outlet property="cardImage" destination="Jjd-fB-buQ" id="9Hf-ch-TKs"/>
                         <outlet property="cardView" destination="FwM-IB-Env" id="0xR-Ej-BO8"/>
+                        <outlet property="mainCardView" destination="EAw-zZ-Ltg" id="2hV-Z9-pNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
