@@ -46,7 +46,8 @@ class ViewController: UIViewController {
         buttonInfo.layer.cornerRadius = 0.5*buttonInfo.bounds.size.width
         buttonInfo.layer.borderWidth = 1
         buttonInfo.layer.borderColor = UIColor.white.cgColor
-       
+        buttonInfo.layer.zPosition = 1
+        
         buttonRefresh.layer.cornerRadius = 0.8*buttonInfo.bounds.size.width
         buttonRefresh.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
         buttonRefresh.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
