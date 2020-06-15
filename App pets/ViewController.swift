@@ -19,7 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var mainCardView: UIView!
     @IBOutlet weak var buttonCloseInfo: UIImageView!
-    var a: Bool!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var descriptionPet: UILabel!
+    @IBOutlet weak var descriptionName: UILabel!
+    
+    var index = -1
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +104,34 @@ class ViewController: UIViewController {
     @IBAction func closeInfoOnTouchUp(_ sender: UIButton) {
         
     }
+    
+    @IBAction func refreshContents(_ sender: Any) {
+
+              let array = [#imageLiteral(resourceName: "unnamed"), #imageLiteral(resourceName: "kitten-3669244_1280"), #imageLiteral(resourceName: "kitten-1031261_1280"), #imageLiteral(resourceName: "british-4912211_1280"), #imageLiteral(resourceName: "Image")]
+              let arrayText = ["1","2","3","4","5"]
+              
+        
+
+              if index+1 > 4{
+                index = 0
+                      cardImage.image = array[index]
+                      labelName.text = arrayText[index]
+                      descriptionName.text = labelName.text
+                      descriptionPet.text = arrayText[index]
+                       print(index)
+              }
+              else{
+                index += 1
+                cardImage.image = array[index]
+                labelName.text = arrayText[index]
+                descriptionName.text = labelName.text
+                descriptionPet.text = arrayText[index]
+                print(index)
+                
+              }
+        
+    }
+    
 }
 
 
