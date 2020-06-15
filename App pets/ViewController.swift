@@ -65,12 +65,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func apadrinharFill(_ sender: Any) {
-        buttonApadrinhar.setImage(#imageLiteral(resourceName: "ApadrinharFill"), for:UIControl.State.normal)
+        let image = UIImage(named: "Apadrinhar")
+        
+        if buttonApadrinhar.image(for: UIControl.State.normal) == image {
+            buttonApadrinhar.setImage(#imageLiteral(resourceName: "ApadrinharFill"), for:UIControl.State.normal)
+        }else{
+            buttonApadrinhar.setImage(#imageLiteral(resourceName: "Apadrinhar"), for:UIControl.State.normal)
+        }
     }
     
     @IBAction func saveFill(_ sender: Any) {
         buttonSave.setImage(UIImage(systemName:"bookmark.fill"),for:UIControl.State.normal)
-        print("oi")
     }
 
     @IBAction func infoOnTouchUp(_ sender: UIButton) {
