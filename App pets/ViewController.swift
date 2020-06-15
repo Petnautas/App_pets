@@ -75,7 +75,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveFill(_ sender: Any) {
-        buttonSave.setImage(UIImage(systemName:"bookmark.fill"),for:UIControl.State.normal)
+        let image = UIImage(systemName: "bookmark")
+              
+              if buttonSave.image(for: UIControl.State.normal) == image {
+                      buttonSave.setImage(UIImage(systemName:"bookmark.fill"),for:UIControl.State.normal)
+              }else{
+                      buttonSave.setImage(UIImage(systemName:"bookmark"),for:UIControl.State.normal)
+              }
+    
     }
 
     @IBAction func infoOnTouchUp(_ sender: UIButton) {
