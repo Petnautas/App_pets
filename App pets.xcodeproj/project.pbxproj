@@ -15,6 +15,7 @@
 		5E629DEE24893BC10056CDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E629DEC24893BC10056CDBC /* LaunchScreen.storyboard */; };
 		5E629DF924893BC10056CDBC /* App_petsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E629DF824893BC10056CDBC /* App_petsTests.swift */; };
 		5E629E0424893BC10056CDBC /* App_petsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E629E0324893BC10056CDBC /* App_petsUITests.swift */; };
+		5ECB184E24981A1800B7C012 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECB184D24981A1800B7C012 /* DataCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5E629DFF24893BC10056CDBC /* App petsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App petsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E629E0324893BC10056CDBC /* App_petsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_petsUITests.swift; sourceTree = "<group>"; };
 		5E629E0524893BC10056CDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ECB184D24981A1800B7C012 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5E629DEA24893BC10056CDBC /* Assets.xcassets */,
 				5E629DEC24893BC10056CDBC /* LaunchScreen.storyboard */,
 				5E629DEF24893BC10056CDBC /* Info.plist */,
+				5ECB184D24981A1800B7C012 /* DataCollectionViewCell.swift */,
 			);
 			path = "App pets";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECB184E24981A1800B7C012 /* DataCollectionViewCell.swift in Sources */,
 				5E629DE624893BBE0056CDBC /* ViewController.swift in Sources */,
 				5E629DE224893BBE0056CDBC /* AppDelegate.swift in Sources */,
 				5E629DE424893BBE0056CDBC /* SceneDelegate.swift in Sources */,
