@@ -39,7 +39,8 @@ class ViewController: UIViewController {
         
         pageControl.numberOfPages = imageArray.count
         pageControl.hidesForSinglePage = true
-        
+        pageControl.tintColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 2)
+        pageControl.currentPageIndicatorTintColor = .purple
         let closeInfoAction = UITapGestureRecognizer(target: self, action: #selector(self.closeInfo))
         self.buttonCloseInfo.isUserInteractionEnabled = true
         self.buttonCloseInfo.addGestureRecognizer(closeInfoAction)
@@ -118,7 +119,7 @@ class ViewController: UIViewController {
                           completion: nil)
     }
     
-//    @IBAction func refreshContents(_ sender: Any) {
+    @IBAction func refreshContents(_ sender: Any) {
 //
 //              let array = [#imageLiteral(resourceName: "unnamed"), #imageLiteral(resourceName: "kitten-3669244_1280"), #imageLiteral(resourceName: "kitten-1031261_1280"), #imageLiteral(resourceName: "british-4912211_1280"), #imageLiteral(resourceName: "Image")]
 //              let arrayText = ["1","2","3","4","5"]
@@ -143,7 +144,7 @@ class ViewController: UIViewController {
 //
 //              }
 //
-//    }
+    }
     
 }
 
