@@ -63,6 +63,10 @@ class ViewController: UIViewController {
         buttonRefresh.backgroundColor = UIColor(red: 196/255, green: 177/255, blue: 214/255, alpha: 1)
         buttonRefresh.tintColor = UIColor(red: 96/255, green: 64/255, blue: 125/255, alpha: 1)
         
+        buttonApadrinhar.setImage(#imageLiteral(resourceName: "Apadrinhar"), for: UIControl.State.normal)
+        buttonSave.setImage(UIImage(systemName: "bookmark"), for: UIControl.State.normal)
+        
+        buttonRefresh.setImage(UIImage(systemName: "arrow.2.circlepath"), for: UIControl.State.normal)
         
         
         buttonSave.layer.cornerRadius = 0.8*buttonInfo.bounds.size.width
