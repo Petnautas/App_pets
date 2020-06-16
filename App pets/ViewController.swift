@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = .purple
         let closeInfoAction = UITapGestureRecognizer(target: self, action: #selector(self.closeInfo))
         self.buttonCloseInfo.isUserInteractionEnabled = true
+//        self.buttonCloseInfo.tintColor = UIColor(displayP3Red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         self.buttonCloseInfo.addGestureRecognizer(closeInfoAction)
         
         self.backView.layer.cornerRadius = 30
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
         self.collectionView.layer.cornerRadius = 30
         
         buttonInfo.layer.cornerRadius = 0.5*buttonInfo.bounds.size.width
-        buttonInfo.layer.borderWidth = 1
+//        buttonInfo.layer.borderWidth = 1
         buttonInfo.layer.borderColor = UIColor.white.cgColor
         buttonInfo.layer.zPosition = 1
         
